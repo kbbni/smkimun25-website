@@ -1,0 +1,532 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eddbc2; /* Beige background */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The navbar */
+.container {
+    margin: 0 2rem;
+    height: 100%;
+    z-index: 999;
+}
+
+.line-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0; /* No space between the navbar and the lines */
+}
+
+.line-wrapper .line {
+    width: 100%;
+    height: 1.5px; /* Skinnier lines */
+    background-color: #a8927f; /* Secondary color */
+    margin: 2px 0; /* Reduced spacing between lines */
+}
+
+.top-line,
+.bottom-line {
+    display: none; /* Hiding the original single line */
+}
+
+/* Default navbar styles */
+nav {
+    background-color: #eddbc2; /* Beige background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav .logo {
+    width: 77px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a {
+    color: #8f3f3f; /* Red text */
+    padding: 20px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav ul a:hover {
+    color: #eddbc2; /* Beige text on hover */
+    background-color: #a8927f; /* Secondary background on hover */
+    border-radius: 5px;
+}
+
+/* Arabic text alignment and font style */
+.arabic {
+    direction: rtl;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Content Text Styles */
+.content-text {
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 39px;
+    color: #8f3f3f; /* Red text */
+    margin: 0;
+    padding: 100px;
+}
+
+h2 span {
+    color: #a8927f; /* Secondary text */
+    font-size: 15px;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a8927f; /* Secondary background */
+    color: #8f3f3f; /* Red text */
+    border-radius: 20px;
+    margin: 0px;
+    padding: 10px;
+    margin-left: 43%;
+    margin-bottom: 60px;
+    margin-top: -90px;
+}
+
+.btn:hover {
+    background-color: #8f3f3f; /* Red background on hover */
+    color: #a8927f; /* Secondary text on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #a8927f; /* Secondary background */
+    color: #8f3f3f; /* Red text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+
+.logo-img {
+    max-width: 150px; /* Adjust based on your logo size */
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #8f3f3f; /* Red text */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #eddbc2; /* Beige text on hover */
+}
+
+.footer-social {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-social a {
+    color: #8f3f3f; /* Red text */
+    text-decoration: none;
+    width: 500px;
+}
+
+/* Countdown Section */
+.countdown-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; /* Padding for spacing around the section */
+    background: #a8927f; /* Secondary background */
+    text-align: center; /* Centered text inside the section */
+}
+
+h1 {
+    color: #8f3f3f; /* Red text */
+    font-size: 40px;
+    margin: 0; /* Resetting the margin */
+    margin-bottom: 30px; /* 30px space between the h1 and the countdown container */
+}
+
+.countdown-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px; /* Limit width on larger screens */
+    text-align: center; /* Center the text inside the countdown blocks */
+}
+
+.countdown-container .bx {
+    border-radius: 10px;
+    height: 14.25rem;
+    background: #eddbc2; /* Beige background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 10px solid #a8927f; /* Secondary border */
+}
+
+.countdown-container .bx .counter {
+    font-size: 5rem; /* Font size for visibility */
+    color: #a8927f; /* Secondary text */
+    font-weight: 400;
+}
+
+.countdown-container .bx .caption {
+    color: #a8927f; /* Secondary text */
+    margin-top: 0.5rem; /* Spacing between counter and caption */
+}
+
+.kalamfadi{
+    margin: 95px auto;
+    width: 70%;
+    padding: -50px;
+}
+
+.kalamfadi img{
+    width: 320px;
+    float: left;
+    border: 3px solid #a8927f; /* Secondary border */
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box{
+    color: #8f3f3f; /* Red text */
+}
+
+.kalamfadi .text-box h4{
+    font-size: 25px;
+    color: #8f3f3f; /* Red text */
+}
+
+.text-box{
+    font-size: 16px;
+    color: #8f3f3f; /* Red text */
+}
+
+/* Wrapper Styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #a8927f; /* Secondary background */
+    text-align: center;
+    padding: 20px; /* Adjusted padding */
+    flex-wrap: wrap;
+    gap: 0; /* Ensure no space between flex items */
+}
+
+.box-area {
+    width: 350px;
+    margin: 10px; /* Further reduced margin */
+    padding: 20px;
+    background-color: #eddbc2; /* Beige background */
+    transition: background-color 0.6s ease-in-out, box-shadow 0.6s ease-in-out; /* Specify transition properties */
+}
+
+.box-area .icon-area {
+    width: 100%;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.icon-area {
+    font-size: 70px;
+    color: #8f3f3f; /* Red text */
+}
+
+.box-area h6 {
+    margin-bottom: 10px;
+    color: #8f3f3f; /* Red text */
+    font-size: 50px;
+}
+
+.box-area p {
+    color: #8f3f3f; /* Red text */
+    font-size: 35px;
+}
+
+.box-area:hover {
+    background-color: #a8927f; /* Secondary background on hover */
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.box-area:hover .icon-area,
+.box-area:hover h6,
+.box-area:hover p {
+    color: #eddbc2; /* Beige text on hover */
+}
+
+/* Gallery Container Styles */
+.scroll-gallery {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #eddbc2; /* Beige background */
+    perspective: 1000px; /* Perspective for 3D effect */
+}
+
+.gallery-title {
+    text-align: center;
+    font-size: 36px; /* Adjusted font size */
+    color: #8f3f3f; /* Red text */
+    margin-bottom: 20px; /* Space between title and gallery */
+    font-family: 'Arial', sans-serif; /* Use a professional font family */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Scroll Gallery Styles */
+.scroll-container {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    animation: scroll 60s linear infinite; /* Slower continuous scrolling animation */
+}
+
+.scroll-item {
+    flex: 0 0 300px;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    cursor: pointer;
+}
+
+.scroll-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scroll-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.6s ease, filter 0.4s ease;
+}
+
+.scroll-item:hover {
+    transform: rotateY(5deg) rotateX(5deg) scale(1.05); /* Slightly less intense 3D rotation */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Reduced shadow for a more subtle effect */
+}
+
+.scroll-item:hover .scroll-image img {
+    filter: brightness(0.7); /* Darken image on hover */
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.scroll-gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-gallery {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Continuous scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+    /* Responsive Navbar */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #a8927f; /* Secondary background */
+        text-align: center;
+        padding: 1rem 0;
+        flex-direction: column;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .menu-icon span {
+        width: 30px;
+        height: 3px;
+        background-color: #8f3f3f; /* Red color */
+    }
+
+    .menu-icon.open span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-icon.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.open span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Responsive Header Text */
+    .content-text h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 1rem 0;
+        color: #8f3f3f; /* Red text */
+    }
+
+    .content-text h2 span {
+        font-size: 1.2rem;
+        color: #a8927f; /* Secondary text */
+    }
+
+    /* Responsive Apply Button */
+    .btn {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Responsive Countdown Section */
+    .countdown-section {
+        padding: 1rem;
+        background: #a8927f; /* Secondary background */
+    }
+
+    .countdown-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bx {
+        margin: 0.5rem 0;
+        background: #eddbc2; /* Beige background */
+        border-bottom: 10px solid #a8927f; /* Secondary border */
+    }
+
+    /* Responsive Letter From Secretary-General */
+    .kalamfadi {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .kalamfadi img {
+        width: 100%;
+        height: auto;
+        border: 3px solid #a8927f; /* Secondary border */
+    }
+
+    .text-box h4 {
+        font-size: 1.2rem;
+        color: #8f3f3f; /* Red text */
+    }
+
+    .text-box p {
+        font-size: 1rem;
+        color: #8f3f3f; /* Red text */
+    }
+
+    /* Responsive Scroll Gallery */
+    .scroll-gallery {
+        padding: 1rem;
+        background-color: #a8927f; /* Secondary background */
+    }
+
+    .scroll-container {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .scroll-item {
+        display: inline-block;
+        width: 80%;
+        margin-right: 10px;
+    }
+
+    .scroll-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Responsive Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+        margin: 0.5rem 0;
+        color: #8f3f3f; /* Red text */
+    }
+
+    .footer-social {
+        margin-top: 1rem;
+    }
+}
